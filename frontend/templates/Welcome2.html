@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Summer event</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="https://www.docker.com/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Access Docker</a>
+    <a href="https://kubernetes.io/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Access Kubernetes</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://www.docker.com/" class="w3-bar-item w3-button w3-padding-large">Access Docker</a>
+    <a href="https://kubernetes.io/" class="w3-bar-item w3-button w3-padding-large">Access Kubernetes</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Hello! <br> Welcome to the Docker and Kubernetes stand<br>{{message}} </h1>
+  
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Docker</h1>
+      <h3 class="w3-padding-32">What is docker:</h3>
+      <p style="font-size: larger;">Docker is an open-source platform used to develop and run encapsulated application within containers.</p>
+      <h3 class="w3-padding-32">Why use docker:</h3>
+      <p class="w3-text-grey" style="font-size: larger;">Docker containers are appealing for many reasons, but they mainly are: </p>
+       <ul style="font-size: larger;">
+        <li>Portable</li>
+        <li>Flexible</li>
+        <li>Sharable</li>
+        <li>OS-independent</li>
+        <li>Fast</li>
+       </ul>
+
+        <h3 class="w3-padding-32" >How to use Docker ?</h3>
+     <p style="font-size: larger;">Using docker is quick and simple . After creating a dockerfile and building the  image , an instance of that image (container) can then be run.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Kubernetes</h1>
+      <h3 class="w3-padding-32">What is kubernetes:</h3>
+      <p style="font-size: larger;">Kubernetes is an open-source container orchestrater . In other words, it deploys , runs, and manages containers in the cloud and on-premises. Assuring that the number of resources needed is always satisfied no matter the demand .</p>
+      <h3 class="w3-padding-32">Why use it:</h3>
+      <p style="font-size: larger;">Kubernetes has some serious advantages which play a massive role in its constantly growing popularity. Naming a few:</p>
+       <ul style="font-size: larger;">
+        <li>Automation and load balancing </li>
+          <li>	Scalability</li>
+          <li>	High availability</li>
+          <li>	Security</li>
+       </ul>
+  
+      <h3 class="w3-padding-32">Did you know ?</h3>
+
+      <p class="w3-text-grey" style="font-size: larger;"> The Unix team has started running applications in containers as well as deploying them in AKS.<br>Naming a few od these achievements:</p>
+      <ul style="font-size: larger;">
+        <li>Migrating the central authentication service CAS to AKS</li>
+        <li>Containerizing Bioinformatics apps for students to use</li>
+        <li>Migrating Solaris web content to AKS </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge"><b> Want to learn more? </b></h1>
+    <form action="." method="POST">
+      <label for="email">Enter your email:</label>
+      <br><br>
+      <input type="email" id="email" name="email" placeholder="Enter your Email">
+      <br><br>
+      <label for="name">Enter your name:</label>
+      <br><br>
+      <input type='text' name="contents" placeholder="Enter your name"></textarea>
+      <br><br>
+      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Join us</button>
+      
+  </form>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+
+ <h3>The Unix team is thanking you for visiting<h3>
+</footer>
+
+
+
+</body>
+</html>
